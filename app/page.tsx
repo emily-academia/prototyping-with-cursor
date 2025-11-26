@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from './styles/home.module.css';
-import { instrumentSans } from './fonts';
+import { lora, playfairDisplay } from './fonts';
 
 export default function Home() {
   // Add your prototypes to this array
@@ -15,6 +15,11 @@ export default function Home() {
       description: 'An interactive button that creates a colorful confetti explosion',
       path: '/prototypes/confetti-button'
     },
+    {
+      title: 'Typography experiments',
+      description: 'Explore unique typography treatments with circle wrapping, 3D skewed text, and wavy effects',
+      path: '/prototypes/typography-experiments'
+    },
     // Add your new prototypes here like this:
     // {
     //   title: 'Your new prototype',
@@ -24,9 +29,9 @@ export default function Home() {
   ];
 
   return (
-    <div className={`${styles.container} ${instrumentSans.className}`}>
+    <div className={`${styles.container} ${lora.className}`}>
       <header className={styles.header}>
-        <h1>Elizabeth's prototypes</h1>
+        <h1 className={playfairDisplay.className}>Emily's prototypes</h1>
       </header>
 
       <main>
