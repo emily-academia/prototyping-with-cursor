@@ -1,0 +1,449 @@
+/* =============================================================
+   Academia Design System — Documentation Page Layout
+   ============================================================= */
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f5ec;
+}
+
+/* ===========================
+   Sidebar
+   =========================== */
+
+.sidebar {
+  width: 248px;
+  min-height: 100vh;
+  background: #1e2d5a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.sidebarHeader {
+  padding: 2rem 1.75rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logoMark {
+  font-size: 2.75rem;
+  color: #c4962b;
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.logoName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.logoTagline {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  margin-top: 0.2rem;
+  letter-spacing: 0.04em;
+}
+
+.sidebarNav {
+  padding: 1.5rem 0;
+  flex: 1;
+}
+
+.navGroup {
+  margin-bottom: 1.75rem;
+  padding: 0 1.25rem;
+}
+
+.navGroupLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  padding: 0 0.5rem;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transition: background 0.15s, color 0.15s;
+  margin-bottom: 0.1rem;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.navIcon {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.sidebarFooter {
+  padding: 1.25rem 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.versionBadge {
+  display: inline-block;
+  background: rgba(196, 150, 43, 0.2);
+  color: #c4962b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   Main Content
+   =========================== */
+
+.main {
+  margin-left: 248px;
+  flex: 1;
+  padding: 3.5rem 4.5rem 6rem;
+  max-width: 960px;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+
+.hero {
+  margin-bottom: 4rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #ddd5bf;
+}
+
+.heroEyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c4962b;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 4.25rem;
+  font-weight: 400;
+  color: #1e2d5a;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.75;
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+.heroMeta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.heroPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1e2d5a;
+  color: #c4962b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+}
+
+.heroStat {
+  font-size: 0.8rem;
+  color: #8896a8;
+}
+
+.heroStatNum {
+  font-weight: 700;
+  color: #1e2d5a;
+}
+
+/* ===========================
+   Sections
+   =========================== */
+
+.section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 2rem;
+}
+
+.sectionHeader {
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #1e2d5a;
+  margin-bottom: 0;
+  display: inline-block;
+  padding-bottom: 0.625rem;
+  border-bottom: 2.5px solid #c4962b;
+}
+
+.sectionDescription {
+  font-size: 0.925rem;
+  color: #4a5568;
+  line-height: 1.75;
+  margin-top: 0.875rem;
+  margin-bottom: 2rem;
+  max-width: 620px;
+}
+
+.subsectionTitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8896a8;
+  margin-bottom: 0.875rem;
+  margin-top: 2.5rem;
+}
+
+/* ===========================
+   Component Previews
+   =========================== */
+
+.preview {
+  background: white;
+  border: 1px solid #ddd5bf;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.previewRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  align-items: center;
+}
+
+.previewStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.previewGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.previewGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* ===========================
+   Color Palette
+   =========================== */
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 1rem;
+}
+
+.colorSwatch {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.swatchColor {
+  height: 76px;
+}
+
+.swatchInfo {
+  padding: 0.65rem 0.75rem;
+  background: white;
+}
+
+.swatchName {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: block;
+}
+
+.swatchHex {
+  font-size: 0.7rem;
+  color: #8896a8;
+  font-family: 'Geist Mono', monospace;
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.swatchVar {
+  font-size: 0.62rem;
+  color: #b0bac5;
+  font-family: 'Geist Mono', monospace;
+  display: block;
+  margin-top: 0.1rem;
+}
+
+/* ===========================
+   Typography Scale
+   =========================== */
+
+.typeScale {
+  background: white;
+  border: 1px solid #ddd5bf;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.typeRow {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #ede7d7;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.typeRow:last-child {
+  border-bottom: none;
+}
+
+.typeMeta {
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.typeMetaName {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e2d5a;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.typeMetaDetails {
+  font-size: 0.68rem;
+  color: #8896a8;
+  display: block;
+  font-family: 'Geist Mono', monospace;
+  margin-top: 0.25rem;
+}
+
+.typeSample {
+  color: #1a1a2e;
+  flex: 1;
+}
+
+/* ===========================
+   Token Spec Lists
+   =========================== */
+
+.specList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 1px solid #ddd5bf;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.specItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.25rem;
+  border-bottom: 1px solid #ede7d7;
+  font-size: 0.85rem;
+  gap: 1rem;
+}
+
+.specItem:last-child {
+  border-bottom: none;
+}
+
+.specKey {
+  color: #4a5568;
+}
+
+.specValue {
+  color: #1a1a2e;
+  font-weight: 600;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.78rem;
+}
+
+/* ===========================
+   Code Inline Tag
+   =========================== */
+
+.code {
+  background: #1a1a2e;
+  color: #c4962b;
+  font-size: 0.73rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  font-family: 'Geist Mono', monospace;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .heroTitle {
+    font-size: 2.75rem;
+  }
+
+  .previewGrid2,
+  .previewGrid3 {
+    grid-template-columns: 1fr;
+  }
+}

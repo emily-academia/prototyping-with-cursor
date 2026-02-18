@@ -20,6 +20,11 @@ export default function Home() {
       description: 'Explore unique typography treatments with circle wrapping, 3D skewed text, and wavy effects',
       path: '/prototypes/typography-experiments'
     },
+    {
+      title: 'Academia design system',
+      description: 'A scholarly design language for academic products — components, color tokens, and typography documentation',
+      path: '/prototypes/academia'
+    },
     // Add your new prototypes here like this:
     // {
     //   title: 'Your new prototype',
